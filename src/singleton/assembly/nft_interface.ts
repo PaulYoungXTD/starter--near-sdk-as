@@ -10,14 +10,14 @@ export interface INearNFTCore {
         receiver_id: AccountId,
         token_id: string,
         memo: string
-    )
+    ): void
 
     nft_transfer_call(
         receiver_id: AccountId,
         token_id: string,
         memo: string,
         msg: string
-    )
-
+    ): void
+ 
     nft_token(token_id: string): Token | null
 }
